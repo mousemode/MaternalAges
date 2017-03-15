@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Module>
+  <ModulePrefs title="GeoChartID3f1968b58519" />
+  <Content type="html">
+  <![CDATA[ 
+   <!-- GeoChart generated in R 3.3.2 by googleVis 0.6.2 package -->
+<!-- Wed Mar 15 15:48:42 2017 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+
+
+// jsData 
+function gvisDataGeoChartID3f1968b58519 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+"Alabama",
+"36.4 % of Alabama Births",
+1
+],
+[
+"Alaska",
+"10.7 % of Alaska Births",
+1.12
+],
+[
+"Arizona",
+"12.1 % of Arizona Births",
+1.19
+],
+[
+"Arkansas",
+"16.4 % of Arkansas Births",
+1
+],
+[
+"California",
+"9.2 % of California Births",
+1.09
+],
+[
+"Colorado",
+"9.8 % of Colorado Births",
+1
+],
+[
+"Florida",
+"12.3 % of Florida Births",
+1
+],
+[
+"Georgia",
+"22.6 % of Georgia Births",
+1
+],
+[
+"Idaho",
+"20.6 % of Idaho Births",
+1
+],
+[
+"Iowa",
+"26.4 % of Iowa Births",
+1
+],
+[
+"Kansas",
+"21.6 % of Kansas Births",
+1
+],
+[
+"Louisiana",
+"23.3 % of Louisiana Births",
+1
+],
+[
+"Maryland",
+"33.3 % of Maryland Births",
+1
+],
+[
+"Michigan",
+"12.6 % of Michigan Births",
+1
+],
+[
+"Minnesota",
+"13.9 % of Minnesota Births",
+1.18
+],
+[
+"Mississippi",
+"67.7 % of Mississippi Births",
+1
+],
+[
+"Missouri",
+"19.3 % of Missouri Births",
+1
+],
+[
+"Montana",
+"18.5 % of Montana Births",
+1.16
+],
+[
+"Nebraska",
+"21.4 % of Nebraska Births",
+1
+],
+[
+"Nevada",
+"21.3 % of Nevada Births",
+1
+],
+[
+"New Jersey",
+"9.7 % of New Jersey Births",
+1
+],
+[
+"New Mexico",
+"11.8 % of New Mexico Births",
+1.13
+],
+[
+"New York",
+"16.3 % of New York Births",
+1
+],
+[
+"North Carolina",
+"13.1 % of North Carolina Births",
+1.15
+],
+[
+"North Dakota",
+"14.4 % of North Dakota Births",
+1.1
+],
+[
+"Ohio",
+"32.7 % of Ohio Births",
+1
+],
+[
+"Oklahoma",
+"13.2 % of Oklahoma Births",
+1.19
+],
+[
+"Oregon",
+"10.1 % of Oregon Births",
+1
+],
+[
+"Pennsylvania",
+"24 % of Pennsylvania Births",
+1
+],
+[
+"South Carolina",
+"40.5 % of South Carolina Births",
+1
+],
+[
+"South Dakota",
+"15.7 % of South Dakota Births",
+1.18
+],
+[
+"Texas",
+"14.3 % of Texas Births",
+1.1
+],
+[
+"Utah",
+"17.2 % of Utah Births",
+1.16
+],
+[
+"Washington",
+"13.1 % of Washington Births",
+1.16
+],
+[
+"Wisconsin",
+"12.1 % of Wisconsin Births",
+1
+],
+[
+"Wyoming",
+"12.4 % of Wyoming Births",
+1
+] 
+];
+data.addColumn('string','State');
+data.addColumn('string','Births.State.Percent');
+data.addColumn('number','Mean.Birth.Order');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsDrawChart
+function drawChartGeoChartID3f1968b58519() {
+var data = gvisDataGeoChartID3f1968b58519();
+var options = {};
+options["width"] = 556;
+options["height"] = 347;
+options["region"] = "US";
+options["displayMode"] = "regions";
+options["resolution"] = "provinces";
+options["colorAxis"] = {values:[0,1,2,3,4,5,6,7], colors:['#F8F9F9','#CCFFFF','#66F2F5','#668FC2','#6670A3','#665285','#66295C','#660033']};
+
+
+    var chart = new google.visualization.GeoChart(
+    document.getElementById('GeoChartID3f1968b58519')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "geochart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartGeoChartID3f1968b58519);
+})();
+function displayChartGeoChartID3f1968b58519() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsFooter
+</script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID3f1968b58519"></script>
+
+
+<!-- divChart -->
+  
+<div id="GeoChartID3f1968b58519" 
+  style="width: 556; height: 347;">
+</div>
+
+  ]]> 
+  </Content>
+</Module>

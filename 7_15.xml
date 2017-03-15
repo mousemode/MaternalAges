@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Module>
+  <ModulePrefs title="GeoChartID3f194229b9be" />
+  <Content type="html">
+  <![CDATA[ 
+   <!-- GeoChart generated in R 3.3.2 by googleVis 0.6.2 package -->
+<!-- Wed Mar 15 15:48:43 2017 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+
+
+// jsData 
+function gvisDataGeoChartID3f194229b9be () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+"Alabama",
+"0.2 % of Alabama Births",
+1
+],
+[
+"Arkansas",
+"0.2 % of Arkansas Births",
+1
+],
+[
+"California",
+"0 % of California Births",
+1
+],
+[
+"Florida",
+"0.1 % of Florida Births",
+1
+],
+[
+"Georgia",
+"0.1 % of Georgia Births",
+1
+],
+[
+"Illinois",
+"0.2 % of Illinois Births",
+1
+],
+[
+"Indiana",
+"0.2 % of Indiana Births",
+1
+],
+[
+"Louisiana",
+"0.3 % of Louisiana Births",
+1
+],
+[
+"Maryland",
+"0.1 % of Maryland Births",
+1
+],
+[
+"Michigan",
+"0.2 % of Michigan Births",
+1
+],
+[
+"Mississippi",
+"0.3 % of Mississippi Births",
+1
+],
+[
+"Missouri",
+"0.2 % of Missouri Births",
+1
+],
+[
+"New Jersey",
+"0.1 % of New Jersey Births",
+1
+],
+[
+"New York",
+"0.1 % of New York Births",
+1
+],
+[
+"North Carolina",
+"0.2 % of North Carolina Births",
+1
+],
+[
+"Ohio",
+"0.2 % of Ohio Births",
+1
+],
+[
+"Oklahoma",
+"0.3 % of Oklahoma Births",
+1
+],
+[
+"Pennsylvania",
+"0.2 % of Pennsylvania Births",
+1
+],
+[
+"South Carolina",
+"0.2 % of South Carolina Births",
+1
+],
+[
+"Tennessee",
+"0.2 % of Tennessee Births",
+1
+],
+[
+"Texas",
+"0.2 % of Texas Births",
+1
+],
+[
+"Virginia",
+"0.1 % of Virginia Births",
+1
+],
+[
+"Wisconsin",
+"0.2 % of Wisconsin Births",
+1
+] 
+];
+data.addColumn('string','State');
+data.addColumn('string','Births.State.Percent');
+data.addColumn('number','Mean.Birth.Order');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsDrawChart
+function drawChartGeoChartID3f194229b9be() {
+var data = gvisDataGeoChartID3f194229b9be();
+var options = {};
+options["width"] = 556;
+options["height"] = 347;
+options["region"] = "US";
+options["displayMode"] = "regions";
+options["resolution"] = "provinces";
+options["colorAxis"] = {values:[0,1,2,3,4,5,6,7], colors:['#F8F9F9','#CCFFFF','#66F2F5','#668FC2','#6670A3','#665285','#66295C','#660033']};
+
+
+    var chart = new google.visualization.GeoChart(
+    document.getElementById('GeoChartID3f194229b9be')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "geochart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartGeoChartID3f194229b9be);
+})();
+function displayChartGeoChartID3f194229b9be() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsFooter
+</script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID3f194229b9be"></script>
+
+
+<!-- divChart -->
+  
+<div id="GeoChartID3f194229b9be" 
+  style="width: 556; height: 347;">
+</div>
+
+  ]]> 
+  </Content>
+</Module>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Module>
+  <ModulePrefs title="GeoChartID3f1969b5941c" />
+  <Content type="html">
+  <![CDATA[ 
+   <!-- GeoChart generated in R 3.3.2 by googleVis 0.6.2 package -->
+<!-- Wed Mar 15 15:48:43 2017 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+
+
+// jsData 
+function gvisDataGeoChartID3f1969b5941c () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+"Alabama",
+"0.6 % of Alabama Births",
+2.68
+],
+[
+"Arizona",
+"0.4 % of Arizona Births",
+3
+],
+[
+"California",
+"2.6 % of California Births",
+2.83
+],
+[
+"Connecticut",
+"3.5 % of Connecticut Births",
+3.01
+],
+[
+"District of Columbia",
+"0.5 % of District of Columbia Births",
+2
+],
+[
+"Florida",
+"2.6 % of Florida Births",
+3.06
+],
+[
+"Georgia",
+"2.4 % of Georgia Births",
+2.95
+],
+[
+"Illinois",
+"1.5 % of Illinois Births",
+3
+],
+[
+"Indiana",
+"0.1 % of Indiana Births",
+3
+],
+[
+"Iowa",
+"0.5 % of Iowa Births",
+6
+],
+[
+"Kentucky",
+"0.2 % of Kentucky Births",
+3
+],
+[
+"Louisiana",
+"0.6 % of Louisiana Births",
+3.2
+],
+[
+"Maryland",
+"3.2 % of Maryland Births",
+2.66
+],
+[
+"Massachusetts",
+"3.6 % of Massachusetts Births",
+2.63
+],
+[
+"Michigan",
+"1.5 % of Michigan Births",
+3.26
+],
+[
+"Minnesota",
+"1.5 % of Minnesota Births",
+4.99
+],
+[
+"Mississippi",
+"0.3 % of Mississippi Births",
+2.76
+],
+[
+"Missouri",
+"0.4 % of Missouri Births",
+4.2
+],
+[
+"New Jersey",
+"3.3 % of New Jersey Births",
+2.85
+],
+[
+"New York",
+"3.9 % of New York Births",
+2.89
+],
+[
+"North Carolina",
+"1.8 % of North Carolina Births",
+2.94
+],
+[
+"Ohio",
+"1.5 % of Ohio Births",
+3.55
+],
+[
+"Pennsylvania",
+"1.8 % of Pennsylvania Births",
+3.35
+],
+[
+"Rhode Island",
+"2.1 % of Rhode Island Births",
+3.44
+],
+[
+"South Carolina",
+"1.1 % of South Carolina Births",
+2.43
+],
+[
+"Tennessee",
+"0.9 % of Tennessee Births",
+3.56
+],
+[
+"Texas",
+"2.1 % of Texas Births",
+2.73
+],
+[
+"Virginia",
+"1.9 % of Virginia Births",
+2.6
+],
+[
+"Washington",
+"1.2 % of Washington Births",
+3.17
+] 
+];
+data.addColumn('string','State');
+data.addColumn('string','Births.State.Percent');
+data.addColumn('number','Mean.Birth.Order');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsDrawChart
+function drawChartGeoChartID3f1969b5941c() {
+var data = gvisDataGeoChartID3f1969b5941c();
+var options = {};
+options["width"] = 556;
+options["height"] = 347;
+options["region"] = "US";
+options["displayMode"] = "regions";
+options["resolution"] = "provinces";
+options["colorAxis"] = {values:[0,1,2,3,4,5,6,7], colors:['#F8F9F9','#CCFFFF','#66F2F5','#668FC2','#6670A3','#665285','#66295C','#660033']};
+
+
+    var chart = new google.visualization.GeoChart(
+    document.getElementById('GeoChartID3f1969b5941c')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "geochart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartGeoChartID3f1969b5941c);
+})();
+function displayChartGeoChartID3f1969b5941c() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsFooter
+</script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID3f1969b5941c"></script>
+
+
+<!-- divChart -->
+  
+<div id="GeoChartID3f1969b5941c" 
+  style="width: 556; height: 347;">
+</div>
+
+  ]]> 
+  </Content>
+</Module>
